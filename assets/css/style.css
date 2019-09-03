@@ -50,3 +50,29 @@ section {
     text-align: center;
     margin-top: 5%;
 }
+
+.navbar{
+    width: 100%
+}
+
+/* .btn {
+    margin-right: 1px;
+} */
+
+div.scrollmenu {
+    background-color: #222222;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div.scrollmenu a:hover {
+    background-color: #222222;
+  }
