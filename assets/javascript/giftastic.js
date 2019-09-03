@@ -1,5 +1,5 @@
 //Define name of buttons
-var titles = ["Cat", "Dog", "Dolphin", "Tiger", "Duck", "Eagle", "Penguin", "Horse", "Wolf", "Rabbit", "Kangaroo","Hippopotamus", "Elephant", "Parrot","Horse","Camel","Lion","Koala","Hummingbird"];
+var titles = ["Cat", "Dog", "Dolphin", "Tiger", "Duck", "Eagle", "Penguin", "Horse", "Wolf", "Rabbit", "Kangaroo","Hippopotamus", "Elephant", "Parrot","Horse","Hummingbird","Camel","Lion","Koala"];
 
 // Function to create Buttons for the titles
 function newButton() {
