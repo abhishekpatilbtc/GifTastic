@@ -1,6 +1,47 @@
 body {
     background-image: url("../images/background.png");
     background-size: cover;
+    background-position: top;
+    background-repeat: repeat-y;
+    width: 100%;
+
 
 }
 
+
+.titles {
+    font-size: 18px;
+    border-radius: 5%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    margin: 3px;
+    border: none;
+}
+
+.titles:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#bdbdbd;
+    cursor: pointer;
+}
+
+img {
+    padding: 5px;
+    float: left;
+    /* width: 100%;
+    height: auto; */
+}
+
+#add-button:hover, #clear:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+
+
+section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
