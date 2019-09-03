@@ -19,19 +19,18 @@ newButton();
 
 
 
-$(document).on("click", ".series", function () {
-    var series = $(this).attr("data-series");
+$(document).on("click", ".titles", function () {
+   
 
 // Adding click event listen listener to all buttons
 $("button").on("click", function () {
     // Grabbing and storing the data-giphy property value from the button
-    var giphy = $(this).attr("data-giphy");
+     var titles = $(this).attr("data-titles");
 
     //Define Offset
     let offset = 0;
     // Constructing a queryURL using the giphy name
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` +
-        giphy + `&api_key=dc6zaTOxFJmzC&limit=10&offset=${offset}`;
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=${titles}&api_key=dc6zaTOxFJmzC&limit=10&offset=${offset}`;
 
     // Performing an AJAX request with the queryURL
     $.ajax({
@@ -90,5 +89,15 @@ $("button").on("click", function () {
 
 });
 
-
-///
+  $("#clear").on("click", function () {
+      $("#gifs-appear-here").empty();
+  })
+  
+  // The function adds a new button to the page when user enters the name and clicks on Add
+  $("#add-button").on("click", function(event) {
+      event.preventDefault();
+      var newSeries = $("#series-input").val().trim();
+      titles.push(newSeries);
+      newButton();
+      $("#series-input").val('');
+  });
