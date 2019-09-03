@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Gif</title>
+  <title>Giftastic!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/materia/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/giphy-logo-1.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      Giftastic
+    </a>
+    <div id="addbtn">
+      <form class="form-inline">
+        <label for="titles-input"></label>
+        <input type="text" id="titles-input" class="form-control" placeholder="Add a Giphy">
+        <div class="btn-group" role="group">
+          <input id="add-button" type="submit" class="btn btn-light btn-sm" value="Save">
+          <input id="clear" type="submit" class="btn btn-light btn-sm" value="Clear">
+        </div>
+      </form>
+    </div>
+  </nav>
   <!-- Buttons appear here -->
-  <div id="buttons"></div>
-  <!-- Create more buttons -->
-  <div id="addbtn">
-    <label for="titles-input">Add a Giphy Button:</label>
-    <input type="text" id="titles-input">
-    <input id="add-button" type="submit" value="Add">
-    <input id="clear" type="submit" value="Clear">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons" id="buttons">
+    <!-- <div id="buttons"></div> -->
   </div>
+  <!-- Create more buttons -->
+
   <!-- Giphys appear here -->
   <div id="gifs-appear-here">
   </div>

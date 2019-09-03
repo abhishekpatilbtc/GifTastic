@@ -6,7 +6,9 @@ function newButton() {
     $("#buttons").empty();
     for (var i = 0; i < titles.length; i++) {
         var a = $("<button>");
-        a.addClass("titles");
+        // a.addClass("titles");
+        a.attr("id", "titles");
+        a.addClass("btn btn-dark")
         a.attr("data-titles", titles[i]);
         a.text(titles[i]);
         $("#buttons").append(a);
@@ -28,7 +30,7 @@ $("#add-button").on("click", function (event) {
 let offset = 0;
 
 // Click on document using titles class since page is going to be dynamic
-$(document).on("click", ".titles", function () {
+$(document).on("click", "#titles", function () {
 
     // Grabbing and storing the data-giphy property value from the button
     var titles = $(this).attr("data-titles");
