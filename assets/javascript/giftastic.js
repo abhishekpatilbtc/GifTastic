@@ -16,14 +16,16 @@ function newButton () {
 //Call the function
 newButton();
 
+//Define Offset
+ let offset = 0;
+
 // Click on document using titles class since page is going to be dynamic
 $(document).on("click", ".titles", function () {
    
     // Grabbing and storing the data-giphy property value from the button
      var titles = $(this).attr("data-titles");
 
-    //Define Offset
-    let offset = 0;
+   
     // Constructing a queryURL using the giphy name
     var queryURL = `https://api.giphy.com/v1/gifs/search?q=${titles}&api_key=dc6zaTOxFJmzC&limit=10&offset=${offset}`;
 
@@ -78,11 +80,10 @@ $(document).on("click", ".titles", function () {
                     //
                 }
             }
-            
+            offset += 10;
         });
-        offset += 10;
 });
-
+//Clearing gifs when cleared button is pressed
   $("#clear").on("click", function () {
       $("#gifs-appear-here").empty();
   })
