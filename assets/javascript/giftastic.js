@@ -1,5 +1,5 @@
 //Define name of buttons
-var titles = ["Cat", "Dog", "Dolphin", "Tiger", "Duck", "Eagle", "Penguin", "Horse", "Wolf", "Rabbit"];
+var titles = ["Cat", "Dog", "Dolphin", "Tiger", "Duck", "Eagle", "Penguin", "Horse", "Wolf", "Rabbit", "Kangaroo","Hippopotamus", "Elephant", "Parrot","Horse","Camel","Lion","Koala","Hummingbird"];
 
 // Function to create Buttons for the titles
 function newButton() {
@@ -11,7 +11,7 @@ function newButton() {
         a.addClass("btn btn-dark")
         a.attr("data-titles", titles[i]);
         a.text(titles[i]);
-        $("#buttons").append(a);
+        $("#buttons").prepend(a);
     }
 }
 //Call the function
