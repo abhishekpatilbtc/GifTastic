@@ -66,7 +66,7 @@ $(document).on("click", ".titles", function () {
                     giphyImage.attr("data-animate", results[i].images.fixed_height.url);
 
                     // Appending the paragraph and image tag to the giphyDiv
-                    giphyDiv.append(p);
+                    // giphyDiv.append(p);
                     giphyDiv.append(giphyImage);
 
                     // Prependng the giphyDiv to the HTML page in the "#gifs-appear-here" div
