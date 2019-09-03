@@ -16,14 +16,9 @@ function newButton () {
 //Call the function
 newButton();
 
-
-
-
+// Click on document using titles class since page is going to be dynamic
 $(document).on("click", ".titles", function () {
    
-
-// Adding click event listen listener to all buttons
-$("button").on("click", function () {
     // Grabbing and storing the data-giphy property value from the button
      var titles = $(this).attr("data-titles");
 
@@ -83,10 +78,9 @@ $("button").on("click", function () {
                     //
                 }
             }
-            offset += 10;
+            
         });
-});
-
+        offset += 10;
 });
 
   $("#clear").on("click", function () {
@@ -96,8 +90,8 @@ $("button").on("click", function () {
   // The function adds a new button to the page when user enters the name and clicks on Add
   $("#add-button").on("click", function(event) {
       event.preventDefault();
-      var newSeries = $("#series-input").val().trim();
+      var newSeries = $("#titles-input").val().trim();
       titles.push(newSeries);
       newButton();
-      $("#series-input").val('');
+      $("#titles-input").val('');
   });
